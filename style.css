@@ -1,3 +1,56 @@
+/* #region GENERAL */
+body {
+    overflow: hidden;
+}
+/* #endregion GENERAL */
 /* #region debug */
-
+.debug #sidebar {
+    background-color: lightcoral;
+}
 /* #endregion debug */
+/* #region SIDEBAR */
+#sidebar {
+    width: 68px;
+    background-image: url(img/sidebar-bg.png);
+    background-color: #051e34;
+}
+#sidebar .container {
+    height: calc(100vh - 70px);
+}
+#sidebar i {
+    width: 1.8rem;
+    padding: .5rem 0;
+    text-align: center;
+}
+#sidebar .col-12 {
+    transition: .8s;
+}
+#sidebar .col-12:hover {
+    background-color: rgba(255, 255, 255, 0.504);
+}
+/* #endregion SIDEBAR */
+
+
+
+
+
+
+
+/* ############### - MEDIA QUERY - ############### */
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+    #sidebar {
+        width: 150px;
+    }
+}
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 1400px) {
+
+}
