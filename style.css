@@ -8,9 +8,16 @@ body {
     background-color: lightcoral;
 }
 /* #endregion debug */
+
+                                    /* #region MAIN */
+/* #region NAVBAR */
+nav {
+    height: 70px;
+}
+/* #endregion NAVBAR */
 /* #region SIDEBAR */
 #sidebar {
-    width: 68px;
+    width: 56px;
     background-image: url(img/sidebar-bg.png);
     background-color: #051e34;
 }
@@ -30,9 +37,28 @@ body {
 }
 /* #endregion SIDEBAR */
 
+/* #region MAIN_PAGE */
+#btn_plus {
+    transition: .3s;
+}
+#btn_plus:hover {
+    background-color: white;
+    color: black;
+}
+
+#main_page {
+    height: calc(100vh - 70px);
+    overflow: auto;
+    width: 100%;
+}
+#offcanvas{
+    width: 100%;
+}
+/* #endregion MAIN_PAGE */
 
 
 
+                                    /* #endregion MAIN */
 
 
 
@@ -46,6 +72,9 @@ body {
 @media (min-width: 992px) {
     #sidebar {
         width: 150px;
+    }
+    #offcanvas {
+        width: 50%;
     }
 }
 @media (min-width: 1200px) {
