@@ -425,8 +425,33 @@
                             <!-- /todo -->
                             <!-- graphic -->
                             <div id="graphic" class="col-12 pb-4">
-                                <div class="card">
-                                    <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                                <div class="card">                                    
+                                    <div class="">
+                                        <canvas id="myChart"></canvas>
+                                      </div>                                      
+                                      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>                                      
+                                      <script>
+                                        const ctx = document.getElementById('myChart');                                      
+                                        new Chart(ctx, {
+                                          type: 'bar',
+                                          data: {
+                                            labels: ['Never', 'Every few hours', 'Every hour', 'Multiple times per hour', 'Constantly'],
+                                            datasets: [{
+                                                label: '%',
+                                              data: [18, 49, 11, 13, 9],
+                                              borderWidth: 1
+                                            }]
+                                          },
+                                          options: {
+                                            scales: {
+                                              y: {
+                                                beginAtZero: true
+                                              }
+                                            }
+                                          }
+                                        });
+                                      </script>
+
                                     <div class="card-body">
                                         <h5 class="card-title">Utenti attivi</h5>
                                         <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
